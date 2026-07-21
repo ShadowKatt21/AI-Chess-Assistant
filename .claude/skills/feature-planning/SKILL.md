@@ -1,13 +1,13 @@
 ---
 name: feature-planning
-description: How to plan work on the AI-Chess-Assistant project before writing code — tracing the pipeline from Chess.com data through analysis to LLM-generated chess exercises, deciding which module owns a piece of logic, and slicing work into small verifiable steps. Use this whenever the user wants to add a feature, asks how to structure or approach something, says they are not sure where to start, asks what to build next, or requests a plan. Prefer planning with the user over jumping straight to code on this project — they are building it to learn, so the design reasoning is part of the deliverable.
+description: How to plan work on the AI-Chess-Assistant project before writing code — tracing the pipeline from Chess.com data through Stockfish analysis to LLM-generated chess exercises, deciding which module owns a piece of logic, and slicing work into small verifiable steps. Use this whenever the user wants to add a feature, asks how to structure or approach something, says they are not sure where to start, asks what to build next, or requests a plan. Prefer planning with the user over jumping straight to code on this project — they are building it to learn, so the design reasoning is part of the deliverable.
 ---
 
 # Planning work on AI-Chess-Assistant
 
 ## What this project is
 
-An assistant that fetches a player's recent games from Chess.com, analyses them to find
+An assistant that fetches a player's recent games from Chess.com, analyses them using Stockfish to find
 that player's actual weaknesses, and uses an LLM to generate personalised chess
 exercises targeting those weaknesses, calibrated to their rating.
 

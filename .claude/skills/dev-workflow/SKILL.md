@@ -25,9 +25,8 @@ AI-Chess-Assistant/            <- git repo root
 ```
 
 **The source directory name contains spaces.** Always quote it in shell commands:
-`cd "AI Chess Assistant"`. Unquoted, bash reads it as three separate arguments and the
-command fails confusingly. If the directory is ever renamed (e.g. to `src`), update
-this file to match — a stale layout section is worse than none.
+`cd "src"`. Unquoted, bash reads it as three separate arguments and the
+command fails confusingly.
 
 ## Environment
 
@@ -56,7 +55,7 @@ To add a package:
 ```bash
 source venv/bin/activate
 pip install <package>
-cd "AI Chess Assistant" && pip freeze > requirements.txt
+cd src && pip freeze > requirements.txt
 ```
 
 `requirements.txt` lives inside the source directory, not the repo root. Regenerate it
@@ -68,14 +67,14 @@ To rebuild the environment from scratch:
 ```bash
 python3 -m venv venv
 source venv/bin/activate
-pip install -r "AI Chess Assistant/requirements.txt"
+pip install -r src/requirements.txt
 ```
 
 ## Running
 
 ```bash
 source venv/bin/activate
-cd "AI Chess Assistant"
+cd src
 python main.py
 ```
 
